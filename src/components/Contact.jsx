@@ -218,8 +218,9 @@ export default function ContactFormSection() {
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Email Us</h4>
-                    <p className="text-muted-foreground">info@nexily.com</p>
-                    <p className="text-muted-foreground">support@nexily.com</p>
+                    <p className="text-muted-foreground">
+                      nexily.contact@nexily.xyz
+                    </p>
                   </div>
                 </div>
 
@@ -229,7 +230,7 @@ export default function ContactFormSection() {
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Call Us</h4>
-                    <p className="text-muted-foreground">+88 (015) 123-45671</p>
+                    <p className="text-muted-foreground">+880 1784-449742</p>
                     <p className="text-muted-foreground">+88 (018) 987-65431</p>
                   </div>
                 </div>
@@ -241,11 +242,11 @@ export default function ContactFormSection() {
                   <div>
                     <h4 className="font-medium mb-1">Visit Us</h4>
                     <p className="text-muted-foreground">
-                      123 Tree DS
+                      House No: 11, 3rd Floor, Block: j
                       <br />
-                      React JS City, JS 12345
+                      Road: N/52, Eastern Housing
                       <br />
-                      Dhaka, Bangladesh
+                      Mirpur-12, Dhaka
                     </p>
                   </div>
                 </div>
