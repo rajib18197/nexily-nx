@@ -19,7 +19,7 @@ html {
   left: 0;
   height: 0;
   width: 0;
-  background-color: hsl(221.2 83.2% 53.3%);
+  background-color: #60a5fa;
   transition: all 0.4s ease;
 }
 
@@ -38,7 +38,7 @@ html {
 .question__intro svg {
   height: 1.5rem;
   width: 1.5rem;
-  stroke: hsl(221.2 83.2% 53.3%);
+  stroke: #60a5fa;
   border-radius: 100px;
   cursor: pointer;
 }
@@ -120,7 +120,7 @@ html {
 
 .open .question__number,
 .open .question__name {
-  color: hsl(221.2 83.2% 53.3%);
+  color: #60a5fa;
 }
 
 /* Media Queries for Responsive Design */
@@ -239,7 +239,7 @@ html {
 .heading-sub {
   display: block;
   font-weight: 400;
-  color: hsl(221.2 83.2% 53.3%);
+  color: #60a5fa;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.05em;

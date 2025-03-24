@@ -11,7 +11,7 @@ export default function HeroButtons({ primaryText, secondaryText }) {
         variant="default"
         className="group"
         style={{
-          background: `hsl(221.2 83.2% 53.3%)`,
+          backgroundColor: "#60a5fa",
           color: "white",
           cursor: "pointer",
         }}

@@ -28,7 +28,7 @@ async function ServicesSection() {
               <div
                 className="h-full rounded-xl p-6 flex flex-col"
                 style={{
-                  backgroundColor: "hsl(221.2 83.2% 53.3%)",
+                  backgroundColor: "#60a5fa",
                   color: "white",
                 }}
               >

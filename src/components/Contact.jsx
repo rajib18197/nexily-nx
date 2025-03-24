@@ -231,7 +231,6 @@ export default function ContactFormSection() {
                   <div>
                     <h4 className="font-medium mb-1">Call Us</h4>
                     <p className="text-muted-foreground">+880 1784-449742</p>
-                    <p className="text-muted-foreground">+88 (018) 987-65431</p>
                   </div>
                 </div>
 
@@ -512,7 +511,7 @@ export default function ContactFormSection() {
                         className="w-full md:w-auto"
                         disabled={formStatus.isSubmitting}
                         style={{
-                          background: `hsl(221.2 83.2% 53.3%)`,
+                          background: `#60a5fa`,
                           color: "white",
                           cursor: "pointer",
                         }}

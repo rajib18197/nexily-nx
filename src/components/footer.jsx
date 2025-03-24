@@ -1,5 +1,14 @@
 import Link from "next/link";
-import { Zap, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import {
+  Zap,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Footer() {
@@ -17,17 +26,25 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="Facebook">
+                <Link
+                  href="https://www.facebook.com/nexily/"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
                   <Facebook className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant="ghost" size="icon" asChild>
+              {/* <Button variant="ghost" size="icon" asChild>
                 <Link href="#" aria-label="Twitter">
                   <Twitter className="h-5 w-5" />
                 </Link>
-              </Button>
+              </Button> */}
               <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="Instagram">
+                <Link
+                  href="https://www.instagram.com/nexily_it/"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
                   <Instagram className="h-5 w-5" />
                 </Link>
               </Button>
@@ -43,27 +60,42 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#services"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="#process" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#process"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Our Process
                 </Link>
               </li>
               <li>
-                <Link href="#testimonials" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#testimonials"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="#faq" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#faq"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   FAQ
                 </Link>
               </li>
@@ -74,27 +106,42 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Digital Transformation
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Data Analytics
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Mobile Development
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Web Solutions
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Cybersecurity
                 </Link>
               </li>
@@ -107,16 +154,19 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-2 mt-0.5" />
                 <span className="text-muted-foreground">
-                  123 Innovation Street, Tech City, TC 10101
+                  House No: 11, 3rd Floor, Block: j Road: N/52, Eastern Housing
+                  Mirpur-12, Dhaka
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-2" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">+880 1784-449742</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-2" />
-                <span className="text-muted-foreground">info@nexily.com</span>
+                <span className="text-muted-foreground">
+                  nexily.contact@nexily.xyz
+                </span>
               </li>
             </ul>
           </div>
@@ -128,13 +178,22 @@ export default function Footer() {
               © {new Date().getFullYear()} Nexily. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
                 Terms of Service
               </Link>
-              <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
                 Cookie Policy
               </Link>
             </div>

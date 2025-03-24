@@ -82,7 +82,8 @@ export default function Navbar() {
           >
             <Button
               style={{
-                background: `hsl(221.2 83.2% 53.3%)`,
+                // background: `hsl(221.2 83.2% 53.3%)`,
+                backgroundColor: "#60a5fa",
                 color: "white",
                 cursor: "pointer",
               }}
@@ -120,7 +121,7 @@ export default function Navbar() {
               <Button
                 className="mt-2 w-full"
                 style={{
-                  background: `hsl(221.2 83.2% 53.3%)`,
+                  backgroundColor: "#60a5fa",
                   color: "white",
                   cursor: "pointer",
                 }}

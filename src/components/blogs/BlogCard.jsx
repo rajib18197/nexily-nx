@@ -56,7 +56,7 @@ export default function BlogCard({ post, index }) {
           <Button
             variant="ghost"
             style={{
-              background: `hsl(221.2 83.2% 53.3%)`,
+              background: `#60a5fa`,
               color: "white",
               cursor: "pointer",
             }}

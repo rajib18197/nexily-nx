@@ -45,7 +45,7 @@ export default function TestimonialClient({ testimonials, children }) {
             onClick={prevTestimonial}
             aria-label="Previous testimonial"
             style={{
-              background: `hsl(221.2 83.2% 53.3%)`,
+              backgroundColor: "#60a5fa",
               color: "white",
               cursor: "pointer",
             }}
@@ -70,7 +70,7 @@ export default function TestimonialClient({ testimonials, children }) {
             onClick={nextTestimonial}
             aria-label="Next testimonial"
             style={{
-              background: `hsl(221.2 83.2% 53.3%)`,
+              backgroundColor: "#60a5fa",
               color: "white",
               cursor: "pointer",
             }}

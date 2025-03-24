@@ -84,8 +84,7 @@ export default function BlogSection() {
               }}
               className="rounded-full"
               style={{
-                background:
-                  activeCategory === category ? `hsl(221.2 83.2% 53.3%)` : "",
+                background: activeCategory === category ? `#60a5fa` : "",
                 color: activeCategory === category ? "white" : "",
                 cursor: "pointer",
               }}
@@ -159,7 +158,7 @@ export default function BlogSection() {
                           <Button
                             className="w-fit group"
                             style={{
-                              background: `hsl(221.2 83.2% 53.3%)`,
+                              background: `#60a5fa`,
                               color: "white",
                               cursor: "pointer",
                               // backgroundColor: "#101d28",
@@ -203,7 +202,7 @@ export default function BlogSection() {
                 size="lg"
                 className="group"
                 style={{
-                  background: `hsl(221.2 83.2% 53.3%)`,
+                  background: `#60a5fa`,
                   color: "white",
                   cursor: "pointer",
                 }}

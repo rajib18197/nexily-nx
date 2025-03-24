@@ -15,7 +15,7 @@ export default function AnimatedHeroContent({ heroData }) {
         <h1
           className="text-4xl md:text-5xl mt-4 lg:text-6xl font-bold tracking-tight mb-6 market"
           style={{
-            backgroundColor: "hsl(221.2 83.2% 53.3%)",
+            backgroundColor: "#60a5fa",
             backgroundSize: "100%",
             backgroundClip: "text",
             color: "transparent",
