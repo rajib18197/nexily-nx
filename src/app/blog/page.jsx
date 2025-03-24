@@ -18,16 +18,11 @@ export default function BlogPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link href="/" className="flex items-center space-x-2">
-              <Zap
-                className="h-8 w-8 text-primary"
-                style={{ color: "hsl(221.2 83.2% 53.3%)" }}
+              <img
+                src="./Logo.webp"
+                alt="Nexily Logo"
+                style={{ width: "220px", height: "40px", aspectRatio: "4:3" }}
               />
-              <span
-                className="font-bold text-xl md:text-2xl"
-                style={{ color: "hsl(221.2 83.2% 53.3%)" }}
-              >
-                Nexily
-              </span>
             </Link>
           </div>
         </div>
