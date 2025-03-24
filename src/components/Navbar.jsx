@@ -41,7 +41,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Zap
+            {/* <Zap
               className="h-8 w-8 text-primary"
               style={{ color: "hsl(221.2 83.2% 53.3%)" }}
             />
@@ -50,7 +50,12 @@ export default function Navbar() {
               style={{ color: "hsl(221.2 83.2% 53.3%)" }}
             >
               Nexily
-            </span>
+            </span> */}
+            <img
+              src="./Logo.webp"
+              alt="Nexily Logo"
+              style={{ width: "250px", height: "55px", aspectRatio: "4:3" }}
+            />
           </Link>
 
           {/* Desktop Navigation */}

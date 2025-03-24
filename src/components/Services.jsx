@@ -1,7 +1,8 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ShieldPlus } from "lucide-react";
 import { Motion, MotionHeading } from "./Motion";
 import connectToDatabase from "@/lib/mongodb";
 import Service from "@/models/Service";
+import ServiceButton from "./ServiceButton";
 
 async function ServicesSection() {
   await connectToDatabase();
@@ -16,8 +17,8 @@ async function ServicesSection() {
           <MotionHeading>
             <h2 className="heading-sub">Services</h2>
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-[30px] font-bold text-muted-foreground leading-tight sm:leading-normal max-w-full sm:max-w-3xl sm:text-left">
-              We offer a wide range of services to help your business thrive in
-              the digital age.
+              we are providing IT services and strategic consultancy, enabling
+              businesses to achieve technology-driven excellence.
             </p>
           </MotionHeading>
         </div>
@@ -31,7 +32,9 @@ async function ServicesSection() {
                   color: "white",
                 }}
               >
-                <div className="mb-4 w-10 h-10 rounded-full bg-[#3d4675] flex items-center justify-center"></div>
+                <div className="mb-4 w-10 h-10 rounded-full bg-[#3d4675] flex items-center justify-center">
+                  <ShieldPlus />
+                </div>
 
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
 
@@ -49,23 +52,7 @@ async function ServicesSection() {
                 )}
 
                 <div className="mt-auto">
-                  <button
-                    className={`group flex text-center items-center justify-center text-sm font-medium hover:text-white transition-colors`}
-                    style={{
-                      textAlign: "center",
-                      width: "100%",
-                      background: "white",
-                      color: "#101d28",
-                      padding: "10px 20px",
-                      borderRadius: "100px",
-                      cursor: "pointer",
-                    }}
-                  >
-                    {service.buttonText}
-                    <ArrowRight
-                      className={`ml-2 h-4 w-4 transition-transform`}
-                    />
-                  </button>
+                  <ServiceButton buttonText={service.buttonText} />
                 </div>
               </div>
             </Motion>

@@ -1,4 +1,4 @@
-import { Lightbulb } from "lucide-react";
+import { Lightbulb, Workflow } from "lucide-react";
 import { Motion, MotionHeading } from "./Motion";
 import connectToDatabase from "@/lib/mongodb";
 import Process from "@/models/Process";
@@ -16,8 +16,8 @@ export default async function WorkingProcess() {
           <MotionHeading>
             <h2 className="heading-sub">Working Process</h2>
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-[30px] font-bold text-muted-foreground leading-tight sm:leading-normal max-w-full sm:max-w-3xl sm:text-left">
-              We follow a structured approach to deliver exceptional results for
-              our clients.
+              At Nexily, we follow a streamlined process to deliver high-quality
+              solutions tailored to our clients' needs.
             </p>
           </MotionHeading>
         </div>
@@ -49,7 +49,8 @@ export default async function WorkingProcess() {
                         background: "hsl(12 76% 61% / 0.1)",
                       }}
                     >
-                      <Lightbulb className="h-6 w-6" />
+                      {/* <Lightbulb className="h-6 w-6" /> */}
+                      <Workflow className="h-6 w-6" />
                     </div>
                     <h3 className="text-2xl font-bold mb-3">{step.title}</h3>
                     <p className="text-muted-foreground">{step.description}</p>

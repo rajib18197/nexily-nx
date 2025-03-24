@@ -44,7 +44,7 @@ export default async function FAQSection() {
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto mb-16">
           <MotionHeading>
-            <h2 className="heading-sub">Have Question in Mind?</h2>
+            <h2 className="heading-sub">Have Questions in Mind?</h2>
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-[30px] font-bold text-muted-foreground leading-tight sm:leading-normal max-w-full sm:max-w-3xl sm:text-left">
               Check them all to see if it's already compiled in here
             </p>
