@@ -54,7 +54,7 @@ export default function Navbar() {
             <img
               src="./Logo.webp"
               alt="Nexily Logo"
-              style={{ width: "250px", height: "55px", aspectRatio: "4:3" }}
+              style={{ width: "220px", height: "40px", aspectRatio: "4:3" }}
             />
           </Link>
 

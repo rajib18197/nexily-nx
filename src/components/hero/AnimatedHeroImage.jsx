@@ -3,17 +3,27 @@
 import { useState } from "react";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 
+const placeHolderImages = [
+  "./header-03.jpg",
+  "./header-02.jpg",
+  "./header-01.png",
+];
+
 export default function AnimatedHeroImage({ images = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   console.log(currentIndex);
   function handleChangeInc() {
     console.log(12);
-    setCurrentIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
+    setCurrentIndex((prev) =>
+      prev < (images.length || placeHolderImages.length) - 1 ? prev + 1 : 0
+    );
   }
 
   function handleChangeDec() {
     console.log(21);
-    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
+    setCurrentIndex((prev) =>
+      prev > 0 ? prev - 1 : (images.length || placeHolderImages.length) - 1
+    );
   }
 
   return (
@@ -23,6 +33,26 @@ export default function AnimatedHeroImage({ images = [] }) {
     >
       <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-primary/5 rounded-3xl transform rotate-3"></div>
       <div>
+        {images.length === 0 &&
+          placeHolderImages.map((image, index) => {
+            return (
+              <div
+                className="absolute inset-0 bg-card rounded-2xl shadow-xl overflow-hidden"
+                style={{
+                  transform: `translateX(${100 * (index - currentIndex)}%)`,
+                  transition: "all .6s",
+                }}
+                key={index}
+              >
+                <img
+                  src={image || ""}
+                  alt="Team collaboration"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            );
+          })}
+
         {images.map((image, index) => {
           return (
             <div
