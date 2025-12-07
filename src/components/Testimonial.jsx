@@ -48,9 +48,9 @@ export default async function Testimonials() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto mb-16">
           <MotionHeading>
-            <h2 className="heading-sub">What Our Clients Say</h2>
+            <h2 className="heading-sub">What Our Management Say</h2>
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-[30px] font-bold text-muted-foreground leading-tight sm:leading-normal max-w-full sm:max-w-3xl sm:text-left">
-              Don't just take our word for it. Here's what our clients said
+              Don't just take our word for it. Here's what our management said
               about working with Nexily.
             </p>
           </MotionHeading>
